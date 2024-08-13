@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>PORTFOLIO</title>
+</head>
+<body>
+
+    <!--        MENU ENCABEZADO       -->
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">DianaFontecha</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--    SECCIÓN INICIO   -->
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>DIANA FONTECHA</h1>
+            <h2>DelevoperWeb Junior</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/diana.fontechadeure"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/DianaFontecha4"target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/diana-isabel-fontecha-619908232/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/dianafontecha73" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/dianafontecha_73/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--    SECCIÓN SOBRE MÍ   -->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Soy Diana  </span>Soy Desarrollador Web Junior, con conocimientos en HTML, CSS, JavaScript, SQL y Python; manejo de frameworks como Bootstrap, Django y un poco de CSS avanzado</p>
+            <div class="fila">
+
+                <!--DATOS PERSONALES-->
+
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li><strong>Residencia:</strong>España</li>
+                        <li><strong>Comunidad:</strong>Madrid</li>
+                        <li><strong>Distrito:</strong>Móstoles</li>
+                        <li><strong>Teléfono:</strong>+34 642 88 42 90</li>
+                        <li><strong>Email:</strong>dianafontecha73@gmail.com</li>
+                    </ul>
+                </div>
+
+                <!--INTERESES PERSONALES -->
+
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i><span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book-open"></i><span>Libros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i><span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-house-laptop"></i><span>Trabajar en remoto</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-umbrella-beach"></i><span>PLAYA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-drumstick-bite"></i><span>Comer pollo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button><a download="Curriculum" href="docs/Curriculum.pdf">
+                Descargar CV</a><i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+        </div>
+    </section>
+    <hr>
+
+    <!--    SECCIÓN SKILLS    -->
+
+    <section class="skills" id="skills">
+       <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+            <div class="col">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skill" onclick="efectoHabilidades()">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Django</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Bootstrap</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--    Habilidades Profesionales   -->
+
+            <div class="col">
+                <h3>Habilidades Profesionales</h3>
+                <div class="skill">
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Trabajo en equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Proyecto</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+       </div>
+    </section>
+    <hr>
+
+    <!--    SECCIÓN CURRICULUM    -->
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Programación de Sistemas Informáticos</h4>
+                        <span class="casa">CDM Escuela de Profesiones Digitales</span>
+                        <span class="fecha">2023</span>
+                        <p>Desarrollo de componentes software a partir de unas especificaciones concretas, proporcionando funciones de administración y supervisión del sistema operativo, para la gestión de los recursos de un sistema informático y la interacción con otros sistemas utilizando tecnologías de desarrollo orientadas a objetos y a componentes.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Digitalización Aplicada al Sector Productivo</h4>
+                        <span class="casa">CEOE Empresas Españolas</span>
+                        <span class="fecha">2022</span>
+                        <p>Aplicación de tecnologías digitales para la gestión de dispositivos y datos en el entorno profesional, gestionar contenidos en el entorno profesional<p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Emprender un negocio</h4>
+                        <span class="casa">Levelcom Servicios de Formación</span>
+                        <span class="fecha">2022</span>
+                        <p>Proporcionar Factores de vialidad y factibilidad para un proyecto empresarial realizando plan de empresa, estudio de mercado, métodos de producción, organización de la empresa, desarrollo de planes económicos y financieros, gestión de proyectos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>T.S.U. Administración de Empresas - Organización y Sistemas</h4>
+                        <span class="casa">Instituto Universitario de Mercadotecnia (ISUM)</span>
+                        <span class="fecha">2012 - 2016</span>
+                        <p>Administración, organización y planificación de Empresas. Procesos de producción, control de calidad, gestión de negocion, gestión laboral</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Programador Web Junior</h4>
+                        <span class="casa">Onets</span>
+                        <span class="fecha">Abril 2024</span>
+                        <p>Desarrollo y Programación de App Médica</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Asitente Administrativo</h4>
+                        <span class="casa">Industrias Artes Elim, C.A.</span>
+                        <span class="fecha">2012 - 2015</span>
+                        <p>Gestión laboral, económica, finciera, contable. Control de calidad, procesos de producción, inventarios, nóminas, clientes, proveedores, bancos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--    SECCIÓN PORTFOLIO    -->
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/html.png" alt=""> 
+                    <div class="overlay">
+                        <h3>Portfolio</h3>
+                        <p>Creación Curriculum Vitae</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/imagen1.png" alt=""> 
+                    <div class="overlay">
+                        <h3>Proyecto Web</h3>
+                        <p>Creación de página Web</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/django.png" alt=""> 
+                    <div class="overlay">
+                        <h3>Proyecto Django</h3>
+                        <p>Tienda Online</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/sql.png" alt=""> 
+                    <div class="overlay">
+                        <h3>Python</h3>
+                        <p>App de Librería</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--    SECCIÓN CONTACTO    -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre:">
+                    <input type="text" placeholder="Número telefónico:">
+                    <input type="text" placeholder="Email:">
+                    <input type="text" placeholder="Tema:">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>
+                            Móstoles, Madrid - España
+                            </li>
+                            <li><i class="fa-solid fa-mobile-screen"></i>
+                            Contáctame: +34 642884290
+                            </li>
+                            <li><i class="fa-solid fa-envelope"></i>
+                            Email: dianafontecha73@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>   
+
+    <!--    SECCIÓN FOOTER    -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>  
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
